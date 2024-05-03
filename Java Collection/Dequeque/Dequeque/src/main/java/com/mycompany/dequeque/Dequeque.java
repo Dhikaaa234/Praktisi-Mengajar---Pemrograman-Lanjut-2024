@@ -4,6 +4,9 @@
 
 package com.mycompany.dequeque;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  *
  * @author ANDHIKA ANANTA PUTRA
@@ -11,6 +14,13 @@ package com.mycompany.dequeque;
 public class Dequeque {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Deque<String> nama = new ArrayDeque<>();
+        nama.offerLast("Mijan");
+        nama.offerLast("Andhika");
+        nama.offerLast("Dimskuy");
+
+        for(String next = nama.pollLast(); next != null; next = nama.pollLast()) {
+            System.out.println(next);
+        }
     }
 }
