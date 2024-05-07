@@ -4,7 +4,7 @@ Kelas : TI-C
 
 # JAVA COLLECTION
 
-# A. Pengenalan Collection
+## Pengenalan Collection
 
      Collection adalah fitur bawaan dalam bahasa pemrograman atau kadang disebut container, yang merupakan object yang mengumpulkan atau berisikan data-data, mirip seperti Array. Java telah menyediakan class-class collection yang dapat digunakan tanpa memerlukan pustaka tambahan. Semua kelas dalam Java merupakan generic class.
 
@@ -19,13 +19,13 @@ Dalam Java Collection terdapat :
 
 # Iterable & Iterator Interface
 
-# 1. Iterable Interface
+## 1. Iterable Interface
 
 - Iterable adalah parent untuk semua collection di Java, kecuali Map
 - Iterable sendiri sangat sederhana, hanya digunakan agar mendukung for-each loop
 - Karena semua collection pasti implement iterable, secara otomatis maka semua collection di Java mendukung perulangan for-each, jadi bukan hanya Array
 
-# Kode Iterable
+## Kode Iterable
 
 ```sh
 import java.util.List;
@@ -41,7 +41,7 @@ public class CIterable {
 }
 ```
 
-# 2.Iterator Interface
+## 2.Iterator Interface
 
 - For-each di Iterable bisa terjadi karena ada method iterator() yang mengembalikan object Iterator
 - Iterator adalah interface yang mendefinisikan cara kita melakukan mengakses element di collection secara sequential
@@ -54,7 +54,7 @@ public class CIterable {
 - Collection merupakan kontrak untuk memanipulasi data collection, seperti menambah, menghapus dan mengecek isi data collection
 - Tidak ada direct implementation untuk Collection, karena collection nanti akan dibagi lagi menjadi List, Set dan Queue.
 
-# Kode menambah, Menghapus, dan Mengecek Data di Collection
+## Kode menambah, Menghapus, dan Mengecek Data di Collection
 
 ```sh
 import java.util.ArrayList;
@@ -82,7 +82,7 @@ public class CCollection {
 }
 ```
 
-# List Interface
+## List Interface
 
 - List adalah struktur data collection yang memiliki sifat sebagai berikut
 
@@ -92,17 +92,17 @@ public class CCollection {
 
 Di Java ada beberapa implementasi List, dan dapat dipilih sesuai dengan kebutuhan kita, diantaranya terdapat:
 
-# 1. Array List Class
+## 1. Array List Class
 
 - ArrayList adalah implementasi dari List menggunakan array
 - Default kapasitas array di ArrayList adalah 10
 - Namun ketika kita memasukkan data dan array sudah penuh, maka secara otomatis ArrayList akan membuat array baru dengan kapasitas baru dengan ukuran kapasitas lama + data baru
 
-# Queue Interface
+## Queue Interface
 
 - Queue adalah implementasi dari struktur data Antrian atau FIFO (First In First Out)
 
-# Array Dequeue vs LinkedList vs Priority Queue
+## Array Dequeue vs LinkedList vs Priority Queue
 
 - ArrayDeque menggunakan array sebagai implementasi queue nya
 - LinkedList menggunakan double linked list sebagai implementasi queue nya
