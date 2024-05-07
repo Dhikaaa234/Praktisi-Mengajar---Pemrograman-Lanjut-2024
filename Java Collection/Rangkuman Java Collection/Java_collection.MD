@@ -122,6 +122,8 @@ public class CList{
 }
 ```
 
+# Queue
+
 ## Queue Interface
 
 - Queue adalah implementasi dari struktur data Antrian atau FIFO (First In First Out)
