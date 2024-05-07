@@ -41,7 +41,7 @@ public class CIterable {
 }
 ```
 
-## 2.Iterator Interface
+## 2. Iterator Interface
 
 - For-each di Iterable bisa terjadi karena ada method iterator() yang mengembalikan object Iterator
 - Iterator adalah interface yang mendefinisikan cara kita melakukan mengakses element di collection secara sequential
@@ -82,7 +82,7 @@ public class CCollection {
 }
 ```
 
-## List Interface
+# List Interface
 
 - List adalah struktur data collection yang memiliki sifat sebagai berikut
 
@@ -97,6 +97,30 @@ Di Java ada beberapa implementasi List, dan dapat dipilih sesuai dengan kebutuha
 - ArrayList adalah implementasi dari List menggunakan array
 - Default kapasitas array di ArrayList adalah 10
 - Namun ketika kita memasukkan data dan array sudah penuh, maka secara otomatis ArrayList akan membuat array baru dengan kapasitas baru dengan ukuran kapasitas lama + data baru
+
+## 2. Linkedlist Class
+
+- LinkedList adalah implementasi List dengan struktur data Double Linked List
+
+## Kode List
+
+```sh
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class CList{
+    public static void main(String[] args) {
+        List<String> names = new ArrayList<>(); //menggunakan ArrayList
+        names.add("joko");
+        System.out.println(names);
+
+        List<String> nama = new LinkedList<>(); //menggunakan LinkedList
+        nama.add("Dhikaa");
+        System.out.println(nama);
+    }
+}
+```
 
 ## Queue Interface
 
@@ -129,6 +153,8 @@ import java.util.Queue;
  }
 ```
 
+# Dequeue
+
 ## Dequeue Interface
 
 - Deque singkatan dari double ended queue, artinya queue yang bisa beroperasi dari depan atau belakang
@@ -156,7 +182,7 @@ import java.util.ArrayDeque;
  }
 ```
 
-## Map Interface
+# Map Interface
 
 ## Map
 
