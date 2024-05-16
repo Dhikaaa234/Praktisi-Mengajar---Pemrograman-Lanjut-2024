@@ -40,7 +40,7 @@ public class antrianRumahSakit {
     }
 
     public static void main(String[] args) {
-        try {
+    
             antrianRumahSakit RS = new antrianRumahSakit();
 
             RS.tambahPasien("Yaya");
@@ -59,8 +59,5 @@ public class antrianRumahSakit {
             RS.tambahPasien("Woloo");
             
             RS.tampilkanAntrian();
-        } catch (Exception e) {
-            System.out.println("Terjadi kesalahan: " + e.getMessage());
-        }
-    }
+        } 
 }
